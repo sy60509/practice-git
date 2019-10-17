@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8></meta>
+	<title>JS事件處理8787</title>
+	
+	<script type="text/javascript">
+		function over(element){
+			element.style.color="red"
+			
+		
+		}
+		function out(element){
+			element.style.color="black"
+		
+		}		
+	</script>
+
+</head>
+<body>
+	<button onclick="alert('Clicked');">click</button>
+	<span onmouseover="over(this)" onmouseleave="out(this)">Test</span>
+	<span onmouseover="over(this)" onmouseleave="out(this)">Test</span>
+</body>
+</html>

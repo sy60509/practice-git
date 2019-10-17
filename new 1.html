@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8></meta>
+	<title>HomePage首頁</title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+	/*
+		var player=new Object();
+		player.name=("John")
+		player.hp=100;
+		var fight=function(){
+			player.hp--;		
+		}
+		var rest=function(){			
+			//hp++;
+		}
+		var report=function(){
+			alert(player.name+": "+player.hp);
+		
+		}
+	
+		fight();
+		rest();
+		report();
+	*/
+	function Player(name,hp){//建構物件的函式
+		//this 代表新建的空白物件
+		this.name=name
+		this.hp=hp;
+		this.fight=function(){
+			this.hp-=2;		
+		}
+		this.rest=function(){			
+			this.hp++;
+		}
+		this.report=function(){
+			alert(this.name+": "+this.hp); 
+		}	
+	}
+	//new Player();
+	var player1=new Player("John",100);
+	player1.fight();
+	player1.report();
+	var player2=new Player("Yun",80);
+	player2.rest();
+	player2.report();
+	</script>
+</head>
+<body>
+	<div class="title">今天天氣不錯</div>
+	<div class="box"></div>
+	<div class="content">我去公園散步，餵<span class="keyword">鴿子</span>。</br>	
+	覺得鴿子<span style="position:relative;top:-2px">2</span>好可愛
+ 	</div>
+	
+	<div>
+		<input></input>
+		<button id="btn">送出</button>	
+	</div>
+
+	
+
+</body>
+</html>
